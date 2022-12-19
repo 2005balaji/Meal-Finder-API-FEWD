@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Cookery!</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="meal-wrapper">
+        <img id="logo"  src="./src/logo.svg" alt="" />
+
+        <!-- space -->
+        <div><br></div>
+        <!-- space -->
+
+        <!--Text Content -->
+        <div class="boxxing">
+          <h3>A recipe has no soul. You, as the cook, must bring soul to the recipe.So, find your next meal here ;)</h3>
+        </div>
+        
+         <!-- search box -->
+
+        <div class="meal-search">
+          <div class="meal-search-box">
+            <input
+              type="text"
+              class="search-control"
+              placeholder="search a category you like !"
+              id="search-input"
+            />
+
+            <!--  close search box -->
+
+
+            <!-- search button -->
+            <button type="submit" class="search-btn btn" id="search-btn">
+              <i>
+                <img
+                  src="./src/searchicon.svg"
+                  alt=""
+                  width="36px"
+                  height="45px"
+                />
+            <!--  close search button -->
+
+          </div>
+        </div>
+
+        <!--random meal -->
+
+        <div class="meal-result-random">
+          <div id="meal-random"></div>
+        </div>
+
+        <div class="meal-details">
+          <!-- recipe close btn -->
+          <button type="button" class="btn random-recipe-close-btn" id="random-recipe-close-btn">
+          <i class="icon">X</i>
+          </button>
+
+          
+
+          <!-- meal content -->
+
+          <div class="meal-details-content-random">
+            <h2 class="recipe-title">Meals Name Here</h2>
+            <p class="recipe-category">Category Name</p>
+            <div class="recipe-instruct">
+              <h3>Instructions:</h3>
+              <p>Random Meal Content</p>
+            </div>
+            <div class="recipe-meal-img">
+              <img src="food.jpg" alt="" />
+            </div>
+            <div class="recipe-link">
+              <a href="#" target="_blank">Watch Video</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- close random meal  -->
+
+        <!--meal box of searched item -->
+
+        <div class="meal-result">
+          <div class="searchquote">
+            <span class="title search hidden" id="search">Our Finds For Your Search</span>
+          </div>
+          <!-- meal item -->
+          <div id="meal"></div>
+          <!-- end of meal item -->
+        </div>
+
+        <div class="meal-details">
+          <!-- recipe close btn -->
+          <button
+            type="button"
+            class="btn recipe-close-btn"
+            id="recipe-close-btn"
+          >
+          <i class="icon">X</i>
+        </button>
+
+          <!-- /close meal box of searched item -->
+
+          <!--meal content -->
+          <div class="meal-details-content">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      © Balaji S
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0px;
+  font-style: normal;
+}
+
+body {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  background-color: #e2a55d;
+}
+
+/* Logo styling */
+#logo {
+  width: 100%;
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1.05rem;
+}
+
+.text {
+  opacity: 0.8;
+}
+
+/* All In Container */
+.container {
+  min-height: 100vh;
+}
+.meal-wrapper {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #e2a55d;
+}
+.meal-search {
+  margin: 2rem 0;
+}
+
+.meal-search-box {
+  margin: 1.2rem 0;
+  display: flex;
+}
+.search-control,
+.search-btn {
+  width: 105%;
+}
+.search-control {
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  outline: 0;
+  border: 0.2rem solid #000000;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 0.1px rgb(133, 133, 133);
+}
+
+.search-btn {
+  width: 55px;
+  height: 55px;
+  font-size: 1.8rem;
+  background: #e00606ad;
+  border: 0.3rem solid #000000;
+  /* Animation  */
+  transition: all 0.4s linear;
+}
+.search-btn:hover {
+  background: rgba(23, 196, 72, 0.821);
+}
+.meal-result {
+  margin-top: 4rem;
+}
+#meal {
+  margin: 2.4rem 0;
+}
+
+.meal-img img {
+  width: 100%;
+  display: block;
+}
+.meal-name {
+  padding: 1.5rem 0.5rem;
+}
+.meal-name h1 {
+  font-size: 2rem;
+}
+.recipe-btn {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background: #fff8d4;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  display: block;
+  width: 175px;
+  margin: 1rem auto;
+  border-radius: 0rem;
+  border: 0.14rem solid #000000;
+  box-shadow: 0.5rem 0.5rem rgb(39, 38, 38);
+  /* Animation  */
+  transition: all 0.2s linear;
+}
+.recipe-btn:hover {
+  box-shadow: 0rem 0rem rgb(39, 38, 38);
+}
+
+/* meal details */
+.meal-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.18rem solid black;
+  color: rgb(0, 0, 0);
+  background: rgb(209 255 232 / 98%);
+  border-radius: 0rem;
+  width: 90%;
+  height: 70%;
+  overflow-y: scroll;
+  display: none;
+  padding: 2rem 0;
+
+  box-shadow: 9px 7px 0.8px rgb(18, 18, 18);
+}
+
+/* /// scroll bar */
+
+.meal-details::-webkit-scrollbar {
+  width: 2px;
+}
+
+.meal-details::-webkit-scrollbar-thumb {
+  background: #ffffff;
+
+  border-radius: 0rem;
+}
+
+/* js related */
+.showRecipe {
+  display: block;
+}
+
+.meal-details-content {
+  margin: 2rem;
+}
+
+.recipe-close-btn {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 1.8rem;
+  background: rgb(255, 255, 255);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border: 3px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.recipe-instruct {
+  padding: 1rem 0;
+}
+
+.recipe-link {
+  margin: 1.4rem 0;
+}
+.recipe-link a {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: 700;
+  /* Animation  */
+  transition: all 0.4s linear;
+}
+.recipe-link a:hover {
+  opacity: 0.8;
+}
+
+.notFound {
+  grid-template-columns: 1fr !important;
+  color: rgba(225, 0, 0, 0.984);
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+/* random funtion */
+
+.meal-result-random {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.icon {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+.meal-item-random {
+  overflow: hidden;
+  margin: 2rem 0;
+  background-color: #fff;
+  border: 3px solid #000000;
+}
+
+.meal-img-random img {
+  width: 110%;
+  display: block;
+}
+.meal-name-random {
+  padding: 1.5rem 0.5rem;
+}
+.meal-name-random h1 {
+  font-size: 2rem;
+}
+.recipe-btn-random {
+  text-decoration: none;
+  color: rgb(5, 51, 17);
+  background: #fff8d4;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  display: block;
+  width: 175px;
+  margin: 1rem auto;
+  border-radius: 0rem;
+  border: 0.14rem solid #000000;
+  box-shadow: 0.5rem 0.5rem rgb(39, 38, 38);
+  /* Animation  */
+  transition: all 0.1s linear;
+}
+.recipe-btn-random:hover {
+  box-shadow: 0rem 0rem rgb(39, 38, 38);
+}
+
+.meal-details-content-random {
+  margin: 2rem;
+}
+.meal-details-content-random p:not(.recipe-category) {
+  padding: 1rem 0;
+}
+.random-recipe-close-btn {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 1.8rem;
+  background: rgb(255, 255, 255);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border: 3px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.random-showRecipe {
+  display: block;
+}
+
+.recipe-title-random {
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+}
+
+.recipe-instruct-random {
+  padding: 1rem 0;
+}
+.recipe-link-random {
+  margin: 1.4rem 0;
+}
+.recipe-link-random a {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: 700;
+  /* Animation  */
+  transition: all 0.4s linear;
+}
+.recipe-link-random a:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  text-align: end;
+  font-size: small;
+  font-weight: bold;
+  background-color: #ffffff;
+  text-shadow: 0.5px 0.1px black;
+  position: relative;
+}
+
+.boxxing {
+  box-sizing: border-box;
+  text-shadow: 2px 0.1px black;
+  font-size: large;
+  width: auto;
+  height: auto;
+  background: #d9d9d9;
+  border: 5px solid #000000;
+}
+
+.meal-result span {
+  font-size: 3rem;
+  text-shadow: 2.5px 0px black;
+}
+
+.meal-item {
+  overflow: hidden;
+  margin: 2rem 0;
+  background-color: #fff;
+  border: 3px solid #000000;
+}
+.hidden {
+  display: none;
+}
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+  #logo {
+    width: 35%;
+  }
+  .meal-img img {
+    width: 100%;
+    display: block;
+  }
+  .meal-search-box {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #logo {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .meal-img img {
+    width: 100%;
+    display: block;
+  }
+  #meal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .meal-item {
+    margin: 0;
+    border: 1.5px solid #000000;
+  }
+  .meal-details {
+    width: 700px;
+    border: 0.18rem solid black;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #meal {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .meal-img img {
+    width: 100%;
+    display: block;
+  }
+}
