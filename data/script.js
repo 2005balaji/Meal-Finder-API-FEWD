@@ -12,7 +12,6 @@ mealList.addEventListener("click", getMealRecipe);
 // close button
 recipeCloseBtn.addEventListener("click", () => {
   mealDetailsContent.parentElement.classList.remove("showRecipe");
-  console.log("search meal was triggered  ");
 });
 
 // get meal list that matches with the ingredients
@@ -75,7 +74,6 @@ function getMealRecipe(ele) {
 // modal output
 
 function mealRecipeModal(meal) {
-  console.log(meal);
   // array indexing object has only 1 element
   meal = meal[0];
   let html3 = `
@@ -119,7 +117,6 @@ const recipeCloseBtn$random = document.getElementById(
 );
 
 recipeCloseBtn.onclick = () => {
-  console.log("licked!");
   abc.classList.remove('"random-showRecipe"');
 };
 
@@ -133,8 +130,6 @@ function random() {
     .then((data) => {
       let htmlr = "";
       if (data.meals) {
-        console.log("Data loading from random function");
-        console.log(data);
         data.meals.forEach((meal) => {
           htmlr += `       
                       <h1>Our Suggested Meal for your day</h1>
@@ -189,7 +184,6 @@ function random() {
 // closing the opened modal (CSS)
 recipeCloseBtn$random.addEventListener("click", () => {
   mealDetailsContent$random.parentElement.classList.remove("random-showRecipe");
-  console.log("Close Moadal");
 });
 
 // starting the random function
