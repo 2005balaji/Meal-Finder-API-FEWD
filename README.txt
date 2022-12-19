@@ -21,6 +21,7 @@ step 1: download and extract.
 step 2: simply click on welcome.html, open on your preffered web-browser(Google Chrome:Recommended)
 
 incase the file is not opening plese click on the following URL : 
+https://2005balaji.github.io/Meal-Finder-API-FEWD/
 
 
 
@@ -30,6 +31,7 @@ any queries contact@balajisr000@gmail.com
 Credits:--
 Design: inspired from https://kalvium.community/
 references:-
+
 1.https://www.themealdb.com/api.php
 2.https://www.youtube.com/watch?v=tPqnKDBaMLQ 
 3.https://www.themealdb.com/
