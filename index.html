@@ -6,18 +6,31 @@
     <title>EatIt</title>
   </head>
   <body>
-    <div>
-      <img src="./welcome.gif" alt="" />
+    <div class="flexbox">
+      <div>
+        <img src="./welcome.gif" alt="" />
+      </div>
     </div>
-    <!-- <footer class="footer">credits:Kalvi</footer> -->
   </body>
 </html>
 
 <style>
-  div {
+  .flexbox {
+    margin-top: 10%;
+    margin-bottom: 90%;
+  }
+  img {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 480px) {
+    .flexbox {
+      margin-top: 70%;
+      margin-bottom: 30%;
+    }
   }
 </style>
 
